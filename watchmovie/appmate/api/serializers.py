@@ -10,3 +10,10 @@ class WatchListSerializer(serializers.ModelSerializer):
         fields = "__all__"
         # fields = ['id', 'name', 'description']
         # exclude = ['name']
+
+
+class StreamPlatformSerializer(serializers.ModelSerializer):
+    
+    class Meta:
+        model = StreamPlatform
+        fields = "__all__"
